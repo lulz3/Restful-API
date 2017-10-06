@@ -37,6 +37,7 @@ namespace ProductApi.Controllers
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
+                return BadRequest(ModelState);
             }
 
             product.Id = Guid.NewGuid().ToString();
